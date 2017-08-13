@@ -1,0 +1,53 @@
+
+body {
+    background:#0000aa;
+    color:#ffffff;
+    font-family:courier;
+    font-size:12pt;
+    text-align:center;
+    margin:100px;
+}
+
+.blink {
+    color:yellow;
+}
+
+.neg {
+    background:#fff;
+    color:#0000aa;
+    padding:2px 8px;
+    font-weight:bold;
+}
+
+p {
+    margin:30px auto;
+    text-align:left;
+    width: 600px;
+}
+
+a,a:hover {
+    color:inherit;
+    font:inherit;
+}
+canvas{
+  margin: 30px auto;
+}
+.menu {
+    text-align:center;
+    margin-top:50px;
+}
+@-webkit-keyframes blinker { from {opacity:1.0;} to {opacity:0.0;} }
+        @keyframes blinker { from {opacity:1.0;} to {opacity:0.0;} }
+
+.blink {
+   text-decoration:blink;
+
+  -webkit-animation-name:blinker;
+          animation-name:blinker;  
+  -webkit-animation-iteration-count:infinite;  
+          animation-iteration-count:infinite;  
+  -webkit-animation-timing-function:cubic-bezier(1.0,0,0,1.0);
+          animation-timing-function:cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration:1s; 
+          animation-duration:1s; 
+}
